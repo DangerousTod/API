@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getResult(query) {
-      axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=' + query + '&camera=fhaz&media_type=image&api_key=BaeWwXptnvdAqiPPUKcGU7rnroTHDtZUKfqD9GpH').then( response => { 
+      axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=' + query + '&camera=fhaz&media_type=image&api_key=DEMO_KEY').then( response => { 
       this.results = response.data.photos;
       });
     }
